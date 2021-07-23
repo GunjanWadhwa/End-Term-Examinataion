@@ -9,7 +9,7 @@ void menu();
 void new_record();
 void modify();
 void view_list();
-void remove();
+void del();
 void view();
 
 
@@ -67,7 +67,7 @@ void menu()
 	break;
 	case 3:view();
 	break;
-	case 4:remove();
+	case 4:del();
 	break;
 	case 5:view_list();
 	break;
@@ -299,7 +299,7 @@ void view()
 
 //------------------------------------------------------------------------------------------------------------------
 
-void remove()
+void del()
 {
     FILE *old,*newrec;
     int test=0;
